@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/Python-2.7-orange)
 # FOFA sdk批量导出ip,port,title,protocol
 
-	不定期更新写入excel、多线程、GPU、多核版本  
+**不定期更新写入excel、多线程、GPU、多核版本**
 
 Tips:  
 	-m fofa邮箱  
