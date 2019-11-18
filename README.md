@@ -1,9 +1,6 @@
 ![](https://img.shields.io/badge/fofa-sdk-blueviolet)
 ![](https://img.shields.io/badge/Python-2.7-orange)
-# fofa-sdk
-
-
-_FOFA sdk批量导出ip,port,title,protocol_
+# FOFA sdk批量导出ip,port,title,protocol
 
 
 Tips:  
