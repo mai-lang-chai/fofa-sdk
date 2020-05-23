@@ -18,20 +18,18 @@ def Request(m,k,p,q):
     query_str = q
     Sum = []
     for page in range(int(p)-1):
-        data = client.get_data(query_str, fields="ip,port,title,protocol" ,page=page)
+        data = client.get_data(query_str, fields="host,title" ,page=page)
         Sum.append(data)
 
 def save(Sum,o):
     for l in Sum:
         for i in range(len(l["results"])):
-            ip = l["results"][i][0]
-            port = l["results"][i][1]
-            title = l["results"][i][2]
-            protocol = l["results"][i][3]
+            host = l["results"][i][0]
+            title = l["results"][i][1]
             try:
-                url = "http://" + ip + ":" + port
+                url = str(host)
                 with open(o,'a+') as f:
-                    f.write(url+"--"+title+"--"+protocol+"--"+'\n')
+                    f.write(url+"--"+title+'\n')
             except:
                 pass
     print "File save as  " + os.getcwd() + "\\" + o
